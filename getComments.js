@@ -5,7 +5,7 @@ var request = require('request');
 var fs = require('fs');
 var date = require('date-utils');
 var video_list = ['-1_I46R3GvI', 'Mx3-HeATdSc', 'k5DUhoa8P08' ,'ob7q9Rd5O8M', 'YhEZtBKYLs0'];
-var api_key = 'AIzaSyCZyVxgyR6x6AFDd3BOjoIr0H-vyWrGygo';
+var api_key = require('config').api_key;
 var base_url = 'https://www.googleapis.com/youtube/v3/commentThreads?textFormat=plainText&part=snippet&maxResults=100';
 
 function doRequest(url) {
